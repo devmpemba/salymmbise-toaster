@@ -15,32 +15,36 @@
     margin-bottom: 12px;
     color: white;
     font-family: Arial, sans-serif;
+    font-weight: 400; /* ← Removes bold */
     animation: slideIn 0.4s ease-out;
 }
 
 .toast-icon {
     font-size: 24px;
+    font-weight: 400; /* ← Removes bold icon weight */
 }
 
 .toast-message {
     flex: 1;
     margin-left: 12px;
     font-size: 17px;
+    font-weight: 400; /* ← Removes bold text */
 }
 
 .toast-close {
     font-size: 22px;
     cursor: pointer;
+    font-weight: 400; /* ← Removes bold close button */
 }
 
 /* Exact Colors like your example */
-.toast.info { background: #a600b8; }     /* Purple */
+.toast.info    { background: #0f7dea; }  /* Purple */
 .toast.success { background: #07b30e; }  /* Green */
-.toast.warning { background: #ff9800; }  /* Orange */
-.toast.danger { background: #ff0000; }   /* Red */
+.toast.warning { background: #efd009; }  /* Orange */
+.toast.danger  { background: #ff0000; }  /* Red */
 
 /* Animation */
 @keyframes slideIn {
     from { opacity: 0; transform: translateX(60px); }
-    to { opacity: 1; transform: translateX(0); }
+    to   { opacity: 1; transform: translateX(0); }
 }
