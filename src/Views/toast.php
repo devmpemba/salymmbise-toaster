@@ -3,18 +3,13 @@
         <div class="toast <?= $toast['type'] ?>">
             
             <div class="toast-icon">
-                <?php if ($toast['type'] === 'success'): ?>
-                    ✔
-                <?php elseif ($toast['type'] === 'danger'): ?>
-                    ✖
-                <?php elseif ($toast['type'] === 'warning'): ?>
-                    ❗
-                <?php else: ?>
-                    ℹ
-                <?php endif; ?>
+                <?= $toast['icon'] ?>
             </div>
 
-            <div class="toast-message"><?= $toast['message'] ?></div>
+            <div class="toast-message">
+                <div class="toast-title"><?= $toast['title'] ?></div>
+                <div class="toast-description"><?= $toast['message'] ?></div>
+            </div>
 
             <div class="toast-close" onclick="this.parentElement.remove()">✕</div>
         </div>
