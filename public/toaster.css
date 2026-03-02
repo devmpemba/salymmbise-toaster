@@ -1,52 +1,54 @@
 #toast-container {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 350px;
     z-index: 999999;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
+/* Modern DaisyUI/Tailwind-like design */
 .toast {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 18px 20px;
-    border-radius: 6px;
-    margin-bottom: 12px;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-weight: 400;
-    animation: slideIn 0.4s ease-out;
-
-    background-clip: padding-box; /* ← FIXES DARK BORDER */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* (optional but looks better) */
+    padding: 14px 18px;
+    border-radius: 12px;
+    background-clip: padding-box;
+    box-shadow: 0px 4px 14px rgba(0,0,0,0.15);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    animation: slideIn 0.35s ease-out;
 }
 
 .toast-icon {
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 22px;
+    margin-right: 12px;
 }
 
 .toast-message {
     flex: 1;
-    margin-left: 12px;
-    font-size: 17px;
-    font-weight: 400;
+    font-size: 16px;
 }
 
 .toast-close {
     font-size: 22px;
     cursor: pointer;
-    font-weight: 400;
+    opacity: 0.8;
 }
 
-/* Colors */
-.toast.info    { background: #a600b8; }
-.toast.success { background: #07b30e; }
-.toast.warning { background: #ff9800; }
-.toast.danger  { background: #ff0000; }
+.toast-close:hover {
+    opacity: 1;
+}
+
+/* DaisyUI-inspired colors */
+.toast.info    { background: #570df8; }  /* Purple (primary) */
+.toast.success { background: #22c55e; }  /* Green */
+.toast.warning { background: #facc15; color: #000; } /* Yellow */
+.toast.danger  { background: #ef4444; }  /* Red */
 
 @keyframes slideIn {
-    from { opacity: 0; transform: translateX(60px); }
+    from { opacity: 0; transform: translateX(40px); }
     to   { opacity: 1; transform: translateX(0); }
 }
