@@ -1,0 +1,40 @@
+{
+  "name": "salymmbise/toaster",
+  "description": "Beautiful colorful toast notifications for PHP & Laravel.",
+  "keywords": [
+    "toast",
+    "notification",
+    "alerts",
+    "php",
+    "laravel",
+    "ui",
+    "toaster"
+  ],
+  "homepage": "https://github.com/salymmbise/toaster",
+  "type": "library",
+  "license": "MIT",
+
+  "authors": [
+    {
+      "name": "Salym Mbise",
+      "email": "your-email@example.com"
+    }
+  ],
+
+  "autoload": {
+    "psr-4": {
+      "SalymMbise\\Toaster\\": "src/"
+    }
+  },
+
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SalymMbise\\Toaster\\ToasterServiceProvider"
+      ]
+    }
+  },
+
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
