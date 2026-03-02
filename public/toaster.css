@@ -1,8 +1,8 @@
-/* === Default position: TOP LEFT === */
+/* === Default position: TOP RIGHT   === */
 #toast-container {
     position: fixed;
     top: 20px;
-    left: 20px; /* default top-left */
+    right: 20px; /* default top-right */
     z-index: 999999;
     width: 380px;
     display: flex;
