@@ -102,15 +102,3 @@ Salym Mbise
 ❤️ Enjoy using SalymMbise Toaster!
 
 Simple. Beautiful. Powerful.
-
-
----
-
-If you want, I can also generate:
-
-✅ `LICENSE` file  
-✅ `CHANGELOG.md`  
-✅ GitHub release description  
-✅ Packagist optimized description  
-
-Just say **"Generate license"** or **"Generate full package docs"**.
